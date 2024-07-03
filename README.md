@@ -24,7 +24,7 @@ Draw & Guess, gerçek zamanlı bir çizim ve tahmin oyunudur. Bir oyuncu detayl�
 1. **Depoyu klonlayın:**
 
     ```sh
-    git clone <repository_url>
+    git clone <https://github.com/aysuhancoskun/draw_and_guess>
     cd draw-and-guess-project
     ```
 
