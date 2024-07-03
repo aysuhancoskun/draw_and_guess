@@ -4,48 +4,68 @@
 Draw & Guess, gerçek zamanlı bir çizim ve tahmin oyunudur. Bir oyuncu detaylı bir 2D tuval üzerine çizim yapar ve diğer oyuncular bu çizimi pikselli bir şekilde görerek ne olduğunu tahmin etmeye çalışır. Oyun, gerçek zamanlı güncellemeleri sağlamak için WebSocket kullanır.
 
 ## Özellikler
-- Modern JavaScript frameworkleri kullanılarak geliştirilmiş duyarlı ve interaktif kullanıcı arayüzü.
-- Gerçek zamanlı çizim güncellemeleri ve oyuncu etkileşimlerini yönetmek için WebSocket iletişimi.
-- SOLID prensiplerinin uygulanması.
-- Detaylı çizimin pikselli versiyonunun tahmin oyuncularına gösterilmesi.
-- Süre dolduğunda veya doğru tahmin yapıldığında yeni bir tur başlatılması.
 
-## Gereksinimler
+- Modern JavaScript framework'leri kullanarak geliştirilen duyarlı ve etkileşimli kullanıcı arayüzü
+- Gerçek zamanlı çizim güncellemeleri ve oyuncu etkileşimleri için WebSocket iletişimi
+- SOLID prensiplerinin uygulanması
+- Detaylı çizimin rasterize edilerek tahmin eden oyunculara gösterilmesi
+- Puanlama sistemi ve lider tablosu
+- Eğlenceli ve kullanıcı dostu arayüz
+
+## Kurulum
+
+### Gereksinimler
+
 - Node.js
-- npm veya yarn
 - MongoDB
 
-## Kurulum ve Çalıştırma
-### Adım 1: Depoyu Klonlayın
-```bash
-git clone <repo-url>
-cd draw-and-guess-project
+### Adımlar
 
-Adım 2: Bağımlılıkları Yükleyin
-Sunucu Tarafı
+1. **Depoyu klonlayın:**
 
-cd server
-npm install
+    ```sh
+    git clone <repository_url>
+    cd draw-and-guess-project
+    ```
 
-İstemci Tarafı
-cd client
-npm install
+2. **Sunucu bağımlılıklarını yükleyin:**
 
-Adım 3: MongoDB'yi Başlatın
-MongoDB'nin sisteminizde yüklü ve çalışır durumda olduğundan emin olun.
+    ```sh
+    npm install
+    ```
 
-Adım 4: Sunucuyu Başlatın
-cd server
-npm start
+3. **İstemci bağımlılıklarını yükleyin:**
 
-Adım 5: İstemciyi Başlatın
-Yeni bir terminal açın ve istemciyi başlatın.
+    ```sh
+    cd client
+    npm install
+    ```
 
-cd client
-npm start
+4. **MongoDB'yi başlatın:**
 
-Adım 6: Oyunu Oynayın
-Tarayıcınızda http://localhost:3000 adresine giderek oyunu başlatabilirsiniz.
+    ```sh
+    mongod
+    ```
+
+5. **Sunucuyu başlatın:**
+
+    ```sh
+    cd ..
+    node server.js
+    ```
+
+6. **İstemciyi başlatın:**
+
+    ```sh
+    cd client
+    npm start
+    ```
+
+7. **Tarayıcıda uygulamayı açın:**
+
+    ```sh
+    http://localhost:3000
+    ```
 
 *Kullanım*
 Oyun Başlatma
